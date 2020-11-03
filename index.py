@@ -38,7 +38,7 @@ cpt = []
 for i in range(0,number_post):
     print(i)
     driver.implicitly_wait(13)            
-    x = driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/div[1]/ul/div/li/div/div/div[2]/span').text
+    x = driver.find_element_by_xpath('/html/body/div[5]/div[2]/div/article/div[3]/div[1]/ul/div/li/div/div/div[2]/span').text
     s = hs.findall(x)   
     cpt.extend(s)
     driver.implicitly_wait(10)
